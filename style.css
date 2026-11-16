@@ -1,0 +1,147 @@
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  background-color: #f4f6f8;
+}
+
+h1 {
+  font-size: 1.8rem;
+  color: white;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #0A1128;
+  padding: 8px;
+}
+
+.content {
+  padding: 5%;
+}
+
+.card-grid {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.card {
+  background-color: white;
+  box-shadow: 2px 2px 12px 1px rgba(140,140,140,.5);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #034078;
+}
+
+input[type=submit] {
+  border: none;
+  color: #FEFCFB;
+  background-color: #034078;
+  padding: 15px;
+  text-align: center;
+  font-size: 16px;
+  width: 130px;
+  margin: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+input[type=submit]:hover {
+  background-color: #1282A2;
+}
+
+input[type=text],
+input[type=password],
+input[type=number],
+select {
+  width: 80%;
+  padding: 12px;
+  margin: 12px auto;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+label {
+  font-size: 1rem;
+}
+
+.value,
+.state {
+  font-size: 1.2rem;
+  color: #1282A2;
+  font-weight: bold;
+}
+
+button {
+  border: none;
+  color: #FEFCFB;
+  padding: 15px 20px;
+  text-align: center;
+  font-size: 17px;
+  min-width: 120px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  margin: 5px;
+}
+
+.button-on {
+  background-color: #034078;
+}
+
+.button-on:hover {
+  background-color: #1282A2;
+}
+
+.button-off {
+  background-color: #858585;
+}
+
+.button-off:hover {
+  background-color: #252524;
+}
+
+.relay-info {
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 480px) {
+  .content {
+    padding: 4%;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    width: 90%;
+    margin: 8px auto;
+  }
+}
